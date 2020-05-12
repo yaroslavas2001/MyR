@@ -172,7 +172,44 @@
       </footer>
   
     </div> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="/js/jquery.backgroundvideo.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var videobackground = new $.backgroundVideo($('body'), {
+        "align": "centerXY",
+        "width": 1280,
+        "height": 720,
+        "path": "video/",
+        "filename": "video",
+        "types": ["mp4","ogg","webm"],
+        "preload": true,
+        "autoplay": true,
+        "loop": true
+      });
+    });
+  </script>
+  <script>
+    	var number = document.querySelector('.counter__number'),
+		numberTop = number.getBoundingClientRect().top,
+		start = +number.innerHTML, end = +number.dataset.max;
+
+		window.addEventListener('scroll', function onScroll() {
+			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+				this.removeEventListener('scroll', onScroll);
+				var interval = setInterval(function() {
+					number.innerHTML = ++start;
+					if(start == end) {
+						clearInterval(interval);
+					}
+				}, 100);
+			}
+		});
+  </script>
+ 
    
+
+   <script src="/js/script.js"></script><!-- -->
     
   </body>
   </html>
