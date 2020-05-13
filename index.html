@@ -109,24 +109,24 @@
           </div>
         </div>
       </div>
-     <div class="counter">
+     <div class="counter" id="counts">
        <div class="container">
          <div class="counter__row">
   
            <div class="counter__item">
-             <div class="counter__number" data-max="17">0</div>
+             <div class="counter__number">177565</div>
              <div class="counter__text">Лет на рынке</div>
            </div>
            <div class="counter__item">
-             <div class="counter__number" data-max="9">0</div>
+             <div class="counter__number" >9</div>
              <div class="counter__text">Видов услуг</div>
            </div>
            <div class="counter__item">
-            <div class="counter__number" data-max="23">0</div>
+            <div class="counter__number" >23</div>
             <div class="counter__text">Мастера</div>
           </div>
           <div class="counter__item">
-            <div class="counter__number" data-max="36">0</div>
+            <div class="counter__number" >36</div>
             <div class="counter__text">Месяцев гарантии</div>
           </div>
          </div>
@@ -189,25 +189,7 @@
       });
     });
   </script>
-  <script>
-    	var number = document.querySelector('.counter__number'),
-		numberTop = number.getBoundingClientRect().top,
-		start = +number.innerHTML, end = +number.dataset.max;
 
-		window.addEventListener('scroll', function onScroll() {
-			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
-				this.removeEventListener('scroll', onScroll);
-				var interval = setInterval(function() {
-					number.innerHTML = ++start;
-					if(start == end) {
-						clearInterval(interval);
-					}
-				}, 100);
-			}
-		});
-  </script>
- 
-   
 
    <script src="/js/script.js"></script><!-- -->
     
