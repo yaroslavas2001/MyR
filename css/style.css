@@ -259,10 +259,16 @@ perspective:1000px ;
   transition: 1s;
   backface-visibility: hidden;
   border-radius:10px;
+  overflow: hidden;
 }
 .masters__item:hover .masters__front{transform: rotateY(180deg);}
 .masters__item:hover .masters__back{transform: rotateY(360deg);}
-
+.end{
+  background-color:#6c7279;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
 
 .map{
   padding: 50px 0;
