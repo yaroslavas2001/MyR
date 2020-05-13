@@ -17,7 +17,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
 body{
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family:  'Arial' , sans-serif;
+  font-size: 14px;
   /* font-family: sans-serif; - шрифт без засечек*/
 }
 .wrapper{
@@ -35,15 +36,20 @@ flex-direction: column;
 }
 /* =================================  Информация  о  автомастерской =========== */
 .header{
-  background-color: rgba(0, 0, 0, .4);
-
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Arial' , sans-serif ;
+  
 }
 .header__row{
   display: flex;
   align-items:center;
   justify-content:space-around;
-  color: seashell;
+  
   padding: 10px 0;
+
 }
 .logo,
 .number,
@@ -57,11 +63,10 @@ text-align: center;
   flex-direction: column;
 }
 .number__item a{
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
-
 .nav{
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .5);
 }
 .nav__item{
   display: flex;
@@ -73,6 +78,8 @@ text-align: center;
 .nav__link{
 color: #f5f5f5;
 text-transform: uppercase;
+font-size: 17px;
+font-weight: 800;
 }
 .nav.fixed{
   height: auto;
@@ -91,8 +98,8 @@ text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 800px;
-  padding-top: 100px;
+  height: 810px;
+  padding-top: 80px;
   
 }
 .intro__inner{
@@ -102,11 +109,11 @@ text-transform: uppercase;
   text-align: center;
 }
 .intro__title{
-  font-family: 'Open Sans', sans-serif; 
+  font-family:'Times New Roman',  sans-serif;
  line-height: 1.1;
   font-size: 65px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0 0 30px;
   text-transform: uppercase;
 }
@@ -116,6 +123,7 @@ text-transform: uppercase;
   color: #fff;
   line-height: 1.5;
   font-weight: 400;
+  font-family: 'Arial' , sans-serif ;
 }
 .btn{
   display: inline-block;
@@ -127,7 +135,7 @@ text-transform: uppercase;
   text-decoration: none;
   padding: 14px 40px;
   border-radius: 2px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Arial' , sans-serif ;
   border: 0;
   cursor: pointer;
   transition: background .1s;
@@ -143,22 +151,21 @@ text-transform: uppercase;
   background-color: #fff;
 }
 .services__row{
-  
   display: flex;
   flex-wrap: wrap;
-  /* margin: 95px 0; */
   padding: 50px 0;
 }
 .services__item{
   width: 33.333333%;
   text-align:center;
   padding: 0 40px;
-  margin: 25px 0;
+  margin: 60px 0;
 }
 .services__icon{
   margin-bottom: 25px;
 }
 .services__title{
+  font-family: 'Times New Roman', sans-serif;
   margin-bottom: 20px;
   font-size: 14px;
   color: #2d3033;
@@ -169,11 +176,12 @@ text-transform: uppercase;
   font-size: 14px;
   color: #6c7279;
   line-height: 1.5;
+  font-family: 'Arial', sans-serif;
 }
 
 .why{
   background-color: #fff;
-padding: 50px 0;
+  padding: 50px 0;
 }
 .why__row{
   display: flex;
@@ -198,15 +206,37 @@ padding: 50px 0;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding-left: 80px;
+  padding-left: 50px;
+}
+.why__title{
+  font-size: 39px;
+  font-weight: 700;
+  font-family: 'Times New Roman',  sans-serif;
+  padding: 0 0 40px 0;
+  text-transform: uppercase;
+}
+.why__subtitle{
+  font-family: 'Arial',  sans-serif;
+  color: #232931;
+  font-size: 21px;
+  padding: 0 0 30px 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.why__text{
+font-family: 'Arial',  sans-serif;
+font-size: 25px;
+  color: #6c7279;
+  line-height: 1.5;
 }
 .counter{
 width: 100%;
 background-color: #fff;
-padding: 50px 0;
+padding: 50px 0 ;
 }
 .counter__row{
 display: flex;
+
 justify-content: space-around;
 text-align: center;
 }
@@ -221,21 +251,20 @@ font-size: 32px;
 .masters{
   width: 100%;
 background-color: #fff;
-padding: 50px 0;
+padding: 50px 0 0 0;
 }
 .masters__row{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  align-items: center;
+ 
+
 }
 .masters__item{
   width: 250px;
   height: 300px;
-  /* border: 1px solid #2d3033; */
-
-margin: 5px;
+ /* border: 1px solid #2d3033; */
+margin: 0 0 50px 0;
 position: relative;
 perspective:1000px ;
 }
@@ -244,8 +273,26 @@ perspective:1000px ;
  background-color: rgb(214, 36, 36);
 }
 .masters__back{
-  background-color: blue;
+  background-color: #fff;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+.masters__title{
+font-size: 25px;
+font-weight: 700;
+padding: 30px 0;
+}
+.masters__subtitle{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px;
+}
+.masters__text{
+  font-size: 15px;
+  margin: 10px 0;
 }
 .masters__front,
 .masters__back{
@@ -278,9 +325,10 @@ perspective:1000px ;
 /* ==================================  footer ================================= */
 .footer{
   background-color: #f5f5f5;
-  height: 50px;
+  height: 200px;
   width: 100%; 
   display: flex;
   justify-content: center;
-  
+padding: 50px 0 ;
+ 
 }
