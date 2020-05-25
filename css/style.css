@@ -505,6 +505,10 @@ input{
   display: flex;
   flex-direction: column;
 }
+.slider{
+  background-color: #fff;
+  padding: 50px 0;
+}
 /* ==================================  footer ================================= */
 .footer{
   background-color: #f5f5f5;
