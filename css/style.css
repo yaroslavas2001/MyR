@@ -647,7 +647,7 @@ transform: rotate(45deg);
   /*
   --======media====----—
   */
-  @media(max-width:1110px){
+  @media(max-width:1110px)and (min-width: 931px){
 .masters__item{
 margin: 10px 55px ;
 }
@@ -660,7 +660,7 @@ margin: 10px 55px ;
 }
 
 }
-  @media(max-width:930px){
+  @media(max-width:930px)and (min-width: 768px){
     .slider__item img{
       width: 190px;
     }
@@ -675,21 +675,21 @@ margin: 10px 55px ;
       line-height: 1.7;
     }
   }
- @media(max-width:767px){
+ @media(max-width:767px)and (min-width: 576px){
  .masters__item{
       margin: 10px;
       }
       .slider__item img{
         width: 140px;
       }
-   
+   .menu-mobile{
+     display: flex;
+   }
    .nav.fixed .nav__item,
    .nav__item{
     display: none;
    }
-   .menu-mobile{
-     display: flex;
-   }
+   
 }
 @media(max-width:575px){
   .masters__item{
