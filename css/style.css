@@ -205,30 +205,24 @@ font-weight: 800;
 .why__content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ 
   width: 50%;
   padding-left: 50px;
+  padding-top: 30px;
 }
 .why__title{
-  font-size: 39px;
-  font-weight: 700;
-  font-family: 'Times New Roman',  sans-serif;
-  padding: 0 0 40px 0;
-  text-transform: uppercase;
-}
-.why__subtitle{
-  font-family: 'Arial',  sans-serif;
-  color: #232931;
-  font-size: 21px;
-  padding: 0 0 30px 0;
+  font-size: 27px;
   font-weight: 500;
-  line-height: 1.2;
+  font-family: 'Times New Roman',  sans-serif;
+  padding: 0 0 30px 0;
+  text-transform: uppercase;
+   line-height: 1.4;
 }
 .why__text{
 font-family: 'Arial',  sans-serif;
-font-size: 25px;
-  color: #6c7279;
-  line-height: 1.5;
+font-size: 21px;
+  color: #000;
+  line-height: 2;
 }
 .counter{
 width: 100%;
