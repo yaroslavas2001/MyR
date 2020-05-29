@@ -770,7 +770,75 @@ margin: 10px 55px ;
    .nav__item{
     display: none;
    }
-   
+   .intro__subtitle{
+     font-size: 16px;
+     font-weight: 530;
+   }
+
+   .intro__inner{
+     max-width: 670px;
+   }
+    .name__title{
+      padding: 20px 0 20px;
+    }
+    .counter__text{
+      font-size: 17px;
+    }
+    .counter{
+      padding: 30px 0px;
+    }
+    .services__item{
+      margin: 20px 0px;
+    }
+    .services__row{
+      padding: 15px 0px;
+    }
+    .why{
+      padding: 30px 0px;
+    }
+    .why__title{
+      font-size: 19px;
+    }
+    .why__text{
+      font-size: 15px;
+    }
+    .why__content{
+      padding: 10px 0px 0px 30px; 
+    }
+    .masters{
+      padding: 30px 0px;
+    }
+    .name__title{
+      font-size: 30px;
+    }
+    .rule{
+      padding: 30px 0px;
+    }
+    .rule__text{
+      font-size: 15px;
+    }
+    .map{
+      padding: 30px 0px;
+    }
+    .block__row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .block__photo{
+      width: 100%;
+    }
+    .block__content{
+      width: 100%;
+      height: auto;
+      margin: 20px 0px;
+    }
+    .where__title{
+      font-size: 20px;
+    }
+    .where__a,
+    .where__a a{
+      font-size: 15px;
+    }
 }
 @media(max-width:575px){
   .masters__item{
@@ -786,8 +854,100 @@ margin: 10px 55px ;
     .slider__row{
       display: none;
     }
+   .header__row{
+     padding: 5px 0px;
+   }
+   .menu__block,
+   .nav__mobile{
+     height: 45px;
+   }
+   .menu__nav__link{
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  .intro__title{
+    font-size: 30px;
+  }
+  .intro__subtitle{
+    font-size: 13px;
+  }
+  .header__row{
+    font-size: 11px;
+  }
+  .intro{
+    padding: 0;
+    height: 300px;
+  }
+  .intro__subtitle{
+    font-size: 11px;
+  }
+  .intro__inner{
+    max-width: 350px;
+  }
+  .menu__nav__link{
+    font-size: 11px;
+  }
+  .btn{
+    font-size: 12px;
+    width: auto;
+    padding: 10px 20px;
+  }
+  .counter__number{
+    font-size: 25px;
+  }
+  .counter__text{
+    font-size: 14px;
+  }
+  .name__title{
+    font-size: 20px;
+    padding: 15px 0px;
+  }
+  .services__icon{
+    width: 32px;
+  }
+  .services__title{
+    font-size: 10px;
+  }
+  .services__text{
+    font-size: 9px;
+  }
+  .services__item{
+    padding: 0 5px;
+  }
+ .why__photo{
+   display: none;
+ }
+ .why__content{
+   width: 100%;
+   padding: 0px 10px;
+ }
+ .why__row{
+   height: auto;
+ }
+ .why{
+   padding: 10px 0px;
+ }
+ .why__title{
+   padding: 0px 0px 10px 0px;
+   font-size: 16px;
+ }
+ .rule__text{
+   font-size: 11px;
+ }
+ .rule__icon img{
+   height: 90px;
+ }
+.rule__row{
+  grid-gap: 10px;
 }
-@media(max-width:410px){
+.rule{
+  padding: 10px 0px;
+}
+.slider{
+  padding: 10px 0px;
+}
+}
+@media(max-width:450px){
   .slider__item img{
     width: 80px;
     height: 40px;
