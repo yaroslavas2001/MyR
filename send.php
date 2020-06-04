@@ -11,13 +11,13 @@ $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->Host = ‘smtp.yandex.ru’; 
 $mail->SMTPAuth = true; 
-$mail->Username = ‘yourlogin’; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
-$mail->Password = ‘yourpass’; // Ваш пароль
+$mail->Username = ‘yaroslavas2001’; // Ваш логин в Яндексе. Именно логин, без @yandex.ru
+$mail->Password = ‘zhbr2001yfcnz’; // Ваш пароль
 $mail->SMTPSecure = ‘ssl’; 
 $mail->Port = 465;
-$mail->setFrom(‘example@yandex.ru’); // Ваш Email
-$mail->addAddress(‘example@mail.ru’); // Email получателя
-$mail->addAddress(‘example@gmail.com’); // Еще один email, если нужно.
+$mail->setFrom(‘yaroslavas2001@yandex.ru’); // Ваш Email
+$mail->addAddress(‘service_station_100@mail.ru’); // Email получателя
+//$mail->addAddress(‘example@gmail.com’);  Еще один email, если нужно.
 // Прикрепление файлов
  for ($ct = 0; $ct < count($_FILES[‘userfile’][‘tmp_name’]); $ct++) {
  $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES[‘userfile’][‘name’][$ct]));
