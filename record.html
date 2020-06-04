@@ -83,7 +83,7 @@
         <div class="container">
           <div class="kontakty__row">
             <div class="kontakty__item">
-              <form action="mail.php" method="POST">
+              <form action="mail.php" method="POST" id="form">
                 <fieldset>
                 <legend>Записаться на техосмотр</legend>
                 <input type="text" name="user_name" placeholder="Введите свое имя" >
@@ -126,13 +126,38 @@
     </footer>
     </div> <!-- /wraper -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script>
+   
+   <script>
       $('.menu-btn').on('click',function(even){
 even.preventDefault;
 $(this).toggleClass('menu-btn_active');
 $('.menu__nav').toggleClass('menu__nav_active');
 });
     </script>
+   
+   <script>
+      $(function(){
+       'use strict';
+      $('#form').on('submit', function(e){
+       e.preventDefault();
+       var fd = new FormData( this );
+       $.ajax({
+       url: 'send.php',
+       type: 'POST',
+       contentType: false, 
+       processData: false, 
+       data: fd,
+       success: function(msg){
+      if(msg == 'ok') {
+       alert('Отправлено');
+      } else {
+       alert('Ошибка')
+      }
+       }
+       });
+       });
+      });
+      </script>
     <script src="js/script.js"></script><!-- -->
 </body>
 </html>
