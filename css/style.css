@@ -450,10 +450,10 @@ td {
 }
 .table__item{
   text-align: center;
-  font-weight: 550;
+  font-weight: 500;
 }
 .table__td{
-  font-weight: 550;
+  font-weight: 500;
 }
 .menu{
 display: flex;
