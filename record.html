@@ -86,12 +86,12 @@
               <form action="mail.php" method="POST" id="form">
                 <fieldset>
                 <legend>Записаться на техосмотр</legend>
-                <input type="text" name="user_name" placeholder="Введите свое имя" >
-                <input type="tel" name="user_phone" placeholder="Введите свой номер" >
-                <input type="text" name="user_message" class="message" placeholder="Напишите нам сообщение">
+                <input type="text" name="name" placeholder="Введите свое имя" >
+                <input type="email" name="email" placeholder="Введите свою почту" >
+                <input type="text" name="text" class="message" placeholder="Напишите нам сообщение">
                 <div><input type="checkbox" id="checkbox_1" name="user_rule"><label for="checkbox_1">Ознакомлен(-а) с правилами проведения технического осмотра</label></div>
                 <div><input type="radio" id="radio" name="user_yes"><label for="radio">Согласен(-на) с обработкой моих данных</label></div>
-                <div class="select"><p>Позвоните мне с </p><select name="user_select" id="select">
+                <div class="select"><p>Хочу записаться с</p><select name="user_select" id="select">
                    <option value="9:00-12:00">9:00-12:00</option>
                    <option value="12:00-15:00">12:00-15:00</option>
                    <option value="15:00-17:00">15:00-17:00</option>
