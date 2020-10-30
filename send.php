@@ -8,8 +8,6 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $text = $_POST['text'];
-$file = $_POST['user_rule'];
-$file1 = $_POST['user_yes'];
 $select = $_POST['select'];
 // Формирование самого письма
 $title = "Заголовок письма";
